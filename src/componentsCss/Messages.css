@@ -1,0 +1,328 @@
+.messages-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .messages-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .messages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .message-button {
+    background-color:rgb(159, 72, 104);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .message-button:hover {
+    background-color:rgb(104, 46, 68);
+  }
+  
+  .message-editor {
+    margin-top: 20px;
+  }
+  
+  .editor-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .message-textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family:"Heebo";
+    direction: rtl;
+    font-size: 1em;
+  }
+  
+  .editor-actions {
+    display: flex;
+    gap: 100px;
+    margin-top: 10px;
+  }
+  
+  .save-button,
+.send-button {
+  padding: 10px 35px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 25vw;
+}
+
+  
+  .save-button {
+    background-color:rgb(159, 72, 104);    
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color:rgb(215, 69, 130);
+  }
+  
+  .send-button {
+    background-color:rgb(117, 78, 93);
+    color:white
+  }
+  
+  .send-button:hover {
+    background-color:rgb(184, 113, 140);
+  }
+  
+  .no-messages {
+    font-size: 16px;
+    color: gray;
+  }
+  
+  .close-button{
+    border: none;
+    background-color: transparent;
+    right: 10vw;
+    position: absolute;
+    top: 4vh;
+  }
+  .close-button:hover{
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For small screens (up to 768px) */
+  @media screen and (max-width: 768px) {
+    .messages-container {
+        position: ABSOLUTE;
+        z-index: 2000;
+        text-align: center;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%);
+        overflow-y: scroll;
+        background-color: #e6e2e2;
+        width: 90vw;
+        height: 70vh;
+
+    }
+  
+    .messages-title {
+        font-size: 2.1em;
+        text-align: center;
+        font-family: "Karantina";
+    }
+  
+    .messages-list {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .message-button {
+        font-size: 1.2em;
+        padding: 8px 12px;
+        direction: rtl;
+    }
+  
+    .message-editor {
+      margin-top: 15px;
+    }
+  
+    .message-textarea {
+      height: 80px;
+    }
+  
+    .editor-actions {
+      display: flex;
+      gap: 7vw;
+      margin-top: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* מרכז גם בציר ה-X */
+    }
+    
+  .closeImg{
+    height:5vh;
+    width:auto
+  }
+  .save-button{
+    font-size: 1.1em;
+    font-family: "Heebo";
+    font-weight: bold;
+    width: 55vw;
+  }
+  .send-button{
+    font-size: 1.1em;
+    font-family: "Heebo";
+    font-weight: bold;
+    width: 55vw;
+  }
+  .messages-icon{
+    height:8vh;
+    width:auto;
+  }
+  }
+  
+  /* For medium screens (769px to 1024px) */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .messages-container {
+      padding: 20px;
+      border-radius: 6px;
+    }
+  
+    .messages-title {
+      font-size: 22px;
+    }
+  
+    .messages-list {
+      gap: 15px;
+    }
+  
+    .message-button {
+      font-size: 16px;
+      padding: 10px 14px;
+    }
+  
+    .message-editor {
+      margin-top: 18px;
+    }
+  
+    .message-textarea {
+      height: 90px;
+    }
+  
+    .editor-actions {
+      gap: 12px;
+    }
+    .closeImg{
+      height:10vh;
+      width:auto
+    }
+   
+  
+  }
+  
+  /* For large screens (1025px and up) */
+  @media screen and (min-width: 1025px) {
+    .messages-container {
+      position: absolute;
+      z-index: 2000;
+      text-align: center;
+      top: 18.5%;
+      left: 0%;
+      overflow: hidden;
+      background-color: #e6e2e2;
+      width: 80vw;
+      min-height: 150vh;
+
+  }
+    
+  .messages-title {
+    font-size:4vw;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Karantina";
+    color:#5f5f5f;
+}
+  
+.messages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ממרכז את הפריטים בשורה */
+  gap: 2vw;
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px; /* מגדיל את המרווח בתחתית ה- .messages-list */
+
+}
+
+.message-button {
+  flex: 0 0 22%; /* כל כפתור יקח 22% מהרוחב, כלומר 4 כפתורים בשורה */
+  margin-bottom: 20px; /* מרווח בין השורות */
+}
+
+  
+    .message-button {
+      height: 20vh;
+      direction: rtl;
+      font-family: "Heebo";
+      font-size: 1.7vw;
+      padding: 12px 18px;
+    }
+  
+    .message-editor {
+      position: relative;
+      margin-top: 49vh;
+      font-size: 1.5vw;
+      direction: rtl;
+      font-family: "Heebo";
+    }
+  
+    .message-textarea {
+      height: 120px;
+    }
+  
+    .editor-actions {
+     transform: translateX(-10%);
+      gap: 20vw;
+    }
+        
+  .save-button {
+    font-family: "Heebo";
+    font-size:1.7vw;
+    color: white;
+    width:24vw;
+    background-color:rgb(131, 26, 65);    
+  }
+  .send-button {
+    font-family: "Heebo";
+    font-size:1.7vw;
+    width:24vw;
+    color: white;
+    background-color:rgb(102, 49, 69);    
+
+
+  }
+  .close-button{
+    border: none;
+    background-color: transparent;
+    right: 73vw;
+    position: absolute;
+    top: 5vh;
+  }
+  .close-button:hover{
+    cursor: pointer;
+  }
+  .closeImg{
+    height:8vh;
+    width:auto;
+    z-index: 10000;
+  }
+  .closeImg:hover{
+    cursor: pointer;
+    height:10vh;
+
+
+  }
+  .editor-title{
+    font-family: "Heebo";
+    font-size: 2vw;
+  }
+  .messages-icon{
+    height:10vh;
+    width:auto;
+  }
+
+  }
+  

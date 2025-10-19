@@ -1,0 +1,195 @@
+
+@media screen and (max-width: 768px) {
+
+#emergency-container {
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #e6e2e2;
+    width: 100vw;
+    height: 125vh;
+
+}
+.margin{
+    position: absolute;
+    bottom:-15%;
+    width:100vw;
+    height:5vh
+}
+.instruction{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85vw;
+    font-size: 1.2em;
+    font-family: "heebo";
+    margin-top: 7vh;
+
+}
+
+.button {
+    width: 80vw; 
+    margin: 10px 0; 
+    padding: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    color:white;
+    border-radius: 15px;
+    height:6.5vh;
+    border: none;
+    font-family: "Heebo";
+    font-weight: 600;
+    font-size: 1.2em;
+    
+}
+
+.buttons-sec{
+    position: absolute;
+    margin-top: 7vh;
+
+}
+
+.button-icon{
+    position: absolute;
+    height:4.2vh;
+    right:15%;
+}
+}
+
+ 
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+    #emergency-container {
+        position: absolute;
+        z-index: 2000;
+        text-align: center;
+        top: 18.5%;
+        left: 0%;
+        overflow: hidden;
+        background-color: #e6e2e2;
+        width: 84vw;
+        height: 120vh;
+    
+    }
+    .instruction{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 85vw;
+        font-size: 2em;
+        font-family: "heebo";
+        margin-top: 3vh;
+    
+    }
+    .buttons-sec {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* שתי עמודות */
+        gap: 20px; /* רווח בין הכפתורים */
+        justify-content: center; /* ממרכז את התוכן */
+        align-items: center; /* ממרכז את התוכן אנכית */
+        width: 80%; /* התאמה לגודל רצוי */
+        margin: 0 auto; /* מרכז את המכלול */
+        position: absolute;
+        left:10%;
+        margin-top: 10vh;
+    }
+    
+    .button {
+        width: 100%;
+        height: 9vh;
+        padding: 10px;
+        font-size: 1.6em;
+        font-family: "Heebo";
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+   .button:hover {
+  filter: saturate(1.3) brightness(1.05);
+  transition: 0.2s ease;
+}
+
+    .button-icon {
+        position: absolute;
+        height: 5vh;
+        right: 10%; /* מתאים את מיקום האייקון בתוך הכפתור */
+        top: 50%; /* ממרכז את האייקון אנכית */
+        transform: translateY(-50%); /* מוודא שהאייקון במרכז האנכי */
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    #emergency-container {
+        position: absolute;
+        z-index: 2000;
+        text-align: center;
+        top: 18.5%;
+        left: 0%;
+        overflow: hidden;
+        background-color: #e6e2e2;
+        width: 84vw;
+        height: 120vh;
+    
+    }
+  
+    .buttons-sec {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* שתי עמודות */
+        gap: 20px; /* רווח בין הכפתורים */
+        justify-content: center; /* ממרכז את התוכן */
+        align-items: center; /* ממרכז את התוכן אנכית */
+        width: 80%; /* התאמה לגודל רצוי */
+        margin: 0 auto; /* מרכז את המכלול */
+        position: absolute;
+        left:10%;
+        margin-top: 10vh;
+    }
+    
+    .button {
+        width: 100%;
+        height: 9vh;
+        padding: 10px;
+        font-size: 1.6vw;
+        font-family: "Heebo";
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+      .button:hover {
+  filter: saturate(1.3) brightness(1.05);
+  transition: 0.2s ease;
+}
+
+    .button-icon {
+        position: absolute;
+        height: 5vh;
+        right: 10%; /* מתאים את מיקום האייקון בתוך הכפתור */
+        top: 50%; /* ממרכז את האייקון אנכית */
+        transform: translateY(-50%); /* מוודא שהאייקון במרכז האנכי */
+    }
+    .button:last-child {
+        grid-column: 1;
+        justify-self: center; 
+        right: 0%;
+        transform: translateX(50%); 
+
+    }
+
+   
+    
+    
+    
+ 
+}
+   

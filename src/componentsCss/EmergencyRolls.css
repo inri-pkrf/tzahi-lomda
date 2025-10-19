@@ -1,0 +1,506 @@
+
+
+ @media screen and (max-width: 768px) {
+
+   .page-container {
+      position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #ffffff;
+     z-index: 2000; /* Ensure it appears above the header */
+     text-align: right;
+     padding-top: 2vh;
+     overflow-y: scroll;
+     overflow-x: hidden;
+   }
+
+ .states{
+   position: absolute;
+   margin-top: 26vh;
+   width: 100vw;
+   height: 10vh;
+   right: 50%;
+   transform: translateX(50%);
+   margin-bottom: 5vh; 
+
+
+ }
+
+ .state1 {
+   position: absolute;
+    right: 0vw;
+    top: 8.5vh;
+    width: 33vw;
+    height: 20vh;
+  
+}
+.fade{
+   opacity: 0.2;
+   width: 33vw;
+   height: 29vh;
+   background-color: #ffffff;
+}
+
+.state1-chosen {
+   position: absolute;
+   right: 0vw;
+   top: 8.5vh;
+   width: 33vw;
+   height: 20vh;
+   background-color: #e6e2e2;
+}
+.state2-chosen {
+   position: absolute;
+   right: 50%;
+   transform: translateX(50%);
+   top: 8.5vh;
+   width: 33vw;
+   height: 20vh;
+   background-color: #e6e2e2;
+}
+
+.state3-chosen{
+   position: absolute;
+   right: 68%;
+   top: 8.5vh;
+   width: 34vw;
+   height: 20vh;
+   background-color: #e6e2e2;
+}
+
+ .state2{
+   position: absolute;
+   right: 50%;
+   transform: translateX(50%);
+   top: 8.5vh;
+   width: 33vw;
+   height: 20vh;
+  
+}
+
+
+
+.state3 {
+   position: absolute;
+   right: 69%;
+   top: 8.5vh;
+   width: 30vw;
+   height: 20vh;
+}
+
+.state-back{
+   opacity: none;
+   width: 30vw;
+   height: 20vh;
+   background-color: #f4f3f3;
+}
+
+ .Fireicon{
+    position: absolute;
+    width:auto;
+    margin-top: 3vh;
+    height: 6vh;
+    right: 50%;
+    transform: translateX(50%);
+ }
+ .tzahiicon{
+   width: auto;
+   margin-top: 3vh;
+   height: 6vh;
+   position: absolute;
+   right: 50%;
+   transform: translateX(50%);
+ }
+ .tasksicon{
+    position: absolute;
+    width:auto;
+    margin-top: 4vh;
+    height: 5.5vh;
+    right: 50%;
+    transform: translateX(50%);
+ }
+
+ .title-sdp{
+    font-family: 'karantina';
+    color: black;
+    position: absolute;
+    margin-top: 12vh;
+    text-align: center;
+    width: 91vw;
+    right: 50%;
+    transform: translateX(50%);
+    font-weight: 400;
+    font-size: 3em;
+    direction: rtl;
+ }
+
+
+
+.stateTitle{
+    font-family: "Heebo";
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(88 88 88);;
+    margin-top: 10vh;
+    line-height: 1.2;
+}
+
+
+ }
+
+ 
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+   .page-container {
+      position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 120%;
+     background-color: #ffffff;
+     z-index: 2000; /* Ensure it appears above the header */
+     text-align: right;
+     padding-top: 2vh;
+     overflow-y:scroll;
+     overflow-x:hidden;
+   }
+
+ .states{
+   position: fixed;
+   margin-top: 12.5vh;
+   height: 100vh;
+   right: 0%;
+   margin-bottom: 5vh;
+ }
+
+ .state1 {
+   position: absolute;
+    right: 1vw;
+    top: 8vh;
+    width: 15vw;
+    height: 15vw;;
+  
+}
+
+.fade{
+   opacity: 0.2;
+   width: 20vw;
+   height: 33vh;
+   background-color: #ffffff;
+}
+
+.state1-chosen {
+   position: absolute;
+   right: 1vw;
+   top: 8vh;
+   width: 15vw;
+   height: 15vw;
+   background-color: #e6e2e2;
+}
+.state2-chosen {
+   position: absolute;
+   right: 1vw;
+   top: 35vh;
+   width: 15vw;
+   height: 15vw;;
+   background-color: #e6e2e2;
+}
+
+.state3-chosen{
+   position: absolute;
+   right: 1vw;
+   top: 63vh;
+   width: 15vw;
+   height:15vw;
+   background-color: #e6e2e2;
+}
+
+ .state2{
+   position: absolute;
+   right: 1vw;
+   top: 35vh;
+   width: 15vw;
+   height: 15vw;;
+  
+}
+
+
+
+.state3 {
+   position: absolute;
+   right: 1vw;
+   top: 63vh;
+   width: 15vw;
+   height: 16vw;;
+}
+
+.state-back{
+   opacity: none;
+   width: 15vw;
+   height: 19vh;
+   background-color: #f4f3f3;
+}
+.state-back:hover{
+   cursor: pointer;
+   background-color: #dedddd;
+
+}
+
+ .Fireicon{
+    position: absolute;
+    width:auto;
+    margin-top: 2vh;
+    height: 10vh;
+    right: 50%;
+    transform: translateX(50%);
+ }
+ .tzahiicon{
+   width: auto;
+   margin-top: 2vh;
+   height: 10vh;
+   position: absolute;
+   right: 50%;
+   transform: translateX(50%);
+ }
+ .tasksicon{
+    position: absolute;
+    width:auto;
+    margin-top: 3vh;
+    height: 9.5vh;
+    right: 50%;
+    transform: translateX(50%);
+ }
+
+ .title-sdp{
+    font-family: 'karantina';
+    color: black;
+    position: absolute;
+    margin-top: 12vh;
+    text-align: center;
+    width: 91vw;
+    right: 50%;
+    transform: translateX(50%);
+    font-weight: 400;
+    font-size: 3vw;
+    direction: rtl;
+ }
+
+ hr.dotted {
+   border: none;
+   border-top: 5px dotted #4b4646;
+   width: 35vh;
+   height: 0;
+   margin: 4vh 0;
+   padding: 0;
+}
+
+
+.hr1{
+   position: absolute;
+   right: 2vw;
+   top: 36vh;
+}
+
+.hr1-none{
+   display: none;
+}
+
+.hr2{
+   position: absolute;
+   left: 8vmin;
+   top: 8vh;
+}
+
+.hr2-none{
+   display: none;
+}
+
+
+
+.stateTitle{
+    font-family: "Heebo";
+    font-weight: 700;
+    font-size: 1.7vw;
+    text-align: center;
+    color: rgb(88 88 88);;
+    margin-top: 14vh;
+}
+}
+
+
+@media screen and (min-width: 1025px) {
+   .page-container {
+      position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 120%;
+     background-color: #ffffff;
+     z-index: 2000; /* Ensure it appears above the header */
+     text-align: right;
+     padding-top: 2vh;
+     overflow-y:scroll;
+     overflow-x:hidden;
+   }
+
+ .states{
+   position: fixed;
+   margin-top: 12.5vh;
+   height: 100vh;
+   right: 0%;
+   margin-bottom: 5vh;
+ 
+ }
+
+ .state1 {
+   position: absolute;
+    right: 1vw;
+    top: 8vh;
+    width: 15vw;
+    height: 15vw;
+  
+}
+.fade {
+   opacity: 0.2;
+   width: 15vw;
+   height: 13vw;
+   background-color: #ffffff;
+}
+
+.state1-chosen, .state2-chosen, .state3-chosen {
+   position: absolute;
+   right: 1vw;
+   width: 15vw;
+   height: 25vh;
+   background-color: #e6e2e2;
+   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* תלת מימד עם הדרגתיות */
+.state1-chosen {
+   top: 8vh;
+   box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.2);
+   transform: perspective(1000px) rotateY(-5deg);
+   background: linear-gradient(to left, #d9d9d9, #e6e2e2);
+}
+
+.state2-chosen {
+   top: 34.5vh;
+   box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.25);
+   transform: perspective(1000px) rotateY(-7deg);
+   background: linear-gradient(to left, #d0d0d0, #e6e2e2);
+}
+
+.state3-chosen {
+   top: 61vh;
+   box-shadow: -12px 12px 25px rgba(0, 0, 0, 0.3);
+   transform: perspective(1000px) rotateY(-9deg);
+   background: linear-gradient(to left, #c8c8c8, #e6e2e2);
+}
+
+/* כאשר המשתמש עובר עם העכבר - האנימציה מתחזקת */
+.state1-chosen:hover,
+.state2-chosen:hover,
+.state3-chosen:hover {
+   box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.4);
+   transform: perspective(1000px) rotateY(-12deg);
+   cursor: pointer;
+}
+
+ .state2{
+   position: absolute;
+   right: 1vw;
+   top: 34.5vh;
+   width: 15vw;
+   height: 25vh;
+
+  
+}
+
+
+
+.state3 {
+   position: absolute;
+   right: 1vw;
+   top: 61vh;
+   width: 15vw;
+   height: 16vw;;
+}
+
+.state-back {
+   width: 15vw;
+   height: 16vw;
+   background-color: #f4f3f3;
+   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+   transform: perspective(800px) rotateY(-3deg);
+   background: linear-gradient(to left, #eaeaea, #f4f3f3);
+   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, background-position 0.3s ease-in-out;
+   background-size: 200% 100%;
+   background-position: 100% 50%;
+}
+
+.state-back:hover {
+   box-shadow: -7px 7px 15px rgba(0, 0, 0, 0.15);
+   transform: perspective(800px) rotateY(-5deg);
+   cursor: pointer;
+   background-position: 0% 50%; /* התזוזה שמאלה של הרקע */
+}
+
+.state-back:active {
+   background-color: #989898;
+}
+
+ .Fireicon{
+    position: absolute;
+    width:auto;
+    margin-top: 2vh;
+    height: 10vh;
+    right: 50%;
+    transform: translateX(50%);
+ }
+ .tzahiicon{
+   width: auto;
+   margin-top: 2vh;
+   height: 10vh;
+   position: absolute;
+   right: 50%;
+   transform: translateX(50%);
+ }
+ .tasksicon{
+    position: absolute;
+    width:auto;
+    margin-top: 3vh;
+    height: 9.5vh;
+    right: 50%;
+    transform: translateX(50%);
+ }
+
+ .title-sdp{
+    font-family: 'karantina';
+    color: black;
+    position: absolute;
+    margin-top: 10vh;
+    text-align: center;
+    width: 91vw;
+    right: 50%;
+    transform: translateX(50%);
+    font-weight: 400;
+    font-size: 4vw;
+    direction: rtl;
+ }
+
+
+
+
+.stateTitle{
+    font-family: "Heebo";
+    font-weight: 700;
+    font-size: 1.7vw;
+    text-align: center;
+    color: rgb(88 88 88);;
+    margin-top: 14vh;
+}
+
+}

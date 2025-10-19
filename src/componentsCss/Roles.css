@@ -1,0 +1,590 @@
+
+@media screen and (max-width: 768px) {
+
+#roles-container {
+    position: ABSOLUTE;
+    z-index: 2000;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    background-color: #e6e2e2;
+    width: 100vw;
+    height: 70vh;
+}
+#buttons-container {
+  position: relative;
+  margin-top: 7vh;
+  width: 100vw;
+  height: 37vh;
+  border-radius: 50%;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  right: 50%;
+  transform: translateX(50%);
+  }
+  
+  .role-button {
+    position: absolute;
+    width: 36vmin; /* גודל רחב יותר */
+    height: 17vmax; /* גובה גבוה יותר */
+    color: white;
+    text-align: center;
+    line-height: 10vh; /* ממרכז את הטקסט בגובה */
+    font-family: "Heebo";
+    font-weight: 600;
+    font-size: 1.2em; /* גודל גופן גדול יותר */
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* צורת משושה */
+}
+
+  .role-button:nth-child(1) {
+    top: 19%; /* Positioning the first button towards the top */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Second button to the left of the center */
+  .role-button:nth-child(2) {
+    top: 42%; /* Positioning the button below the center one */
+    left:4%;
+  }
+  
+  /* Third button to the right of the center */
+  .role-button:nth-child(3) {
+    top: 42%; /* Same height as the second button */
+    right: 4%; /* Move it towards the right side */
+  }
+  
+  /* Fourth button below the second */
+  .role-button:nth-child(4) {
+    top: 89%; /* Positioning further down */
+    left: 4%; /* Left alignment */
+  }
+  
+  /* Fifth button below the third */
+  .role-button:nth-child(5) {
+    top: 89%; /* Same height as the fourth button */
+    right: 4%; /* Right alignment */
+  }
+  
+  /* Sixth button centered below all */
+  .role-button:nth-child(6) {
+    top: 113%; /* Bottom alignment */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .role-button:nth-child(7) {
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+  
+
+  .selected-icon{
+    height: 6vh;
+    transform: translateX(50%);
+    right: 50%;
+    margin-top: 4vh;
+    position: absolute;
+  }
+
+  .selected-name{
+    font-family: "Karantina";
+    color: #595959;
+    font-size: 2em;
+    position: absolute;
+    right: 50%;
+    width: 50vw;
+    transform: translateX(50%);
+    text-align: center;
+    margin-top: 0vh;
+    font-weight: bold;
+  }
+ 
+
+  .scen-selected{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 3vh;
+  }
+
+  
+
+  .next-btnev{
+    background-color: #1bbfe5;
+    border: none;
+    border-radius: 55px;
+    width: 62vw;
+    height: 6vh;
+    position: absolute;
+    font-size: 1.2em;
+    font-family: "Heebo";
+    font-weight: bold;
+    color: #ffffff;
+    padding: 1.5vw;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 59vh;
+  }
+
+  .scenrio-name{
+    position: absolute;
+    font-size: 1.7em;
+    font-family: 'HEEBO';
+    font-weight: bold;
+    color: #6a6f77;
+    margin-top: 11vh;
+    right: 50%;
+    transform: translateX(50%);
+
+}
+  
+  .scenrio-icon{
+    height: 6vh;
+    position: absolute;
+    margin-top: 0.1vh;
+    width: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .evacuation-dis{
+    font-size: 1.2em;
+    position: absolute;
+    direction: rtl;
+    margin-top: 25vh;
+    color: #656565;
+  }
+
+  .specialRole-button{
+    width: 35vw;
+  height: 32vw;
+  border: none;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* צורת משושה */
+  margin-top: -42vh;
+  left: 0vw;
+  position: absolute;
+  font-family: "Heebo";
+  font-size: 1.2em;
+  color: white;
+  }
+}
+ 
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+  #roles-container {
+    position: ABSOLUTE;
+    z-index: 2000;
+    text-align: center;
+    top: 18.5%;
+    left: 0%;
+    overflow: hidden;
+    background-color: #e6e2e2;
+    width: 84vw;
+    overflow: hidden;
+    height: 110vh;
+}
+#buttons-container {
+  position: relative;
+  right: 7vw;
+  margin-top: 22vh;
+  width: 80vw;
+  height: 37vh;
+  border-radius: 50%;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+
+  }
+  
+  .role-button {
+    position: absolute;
+    width: 15vw; /* גודל רחב יותר */
+    height: 14vw; /* גובה גבוה יותר */
+    color: white;
+    text-align: center;
+    line-height: 10vh; /* ממרכז את הטקסט בגובה */
+    font-family: "Heebo";
+    font-weight: 600;
+    font-size: 2em; /* גודל גופן גדול יותר */
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* צורת משושה */
+    line-height: 1.5em; /* מקטין רווח בין שורות */
+
+}
+
+.role-button:nth-child(1) {
+  top: -10%;
+  right: 10%;
+}   
+  
+  /* Second button to the left of the center */
+  .role-button:nth-child(2) {
+    top:66%;
+    left: 32%;
+}
+  
+  /* Third button to the right of the center */
+  .role-button:nth-child(3) {
+    top: 66%;
+    right: 10%;
+}
+  /* Fourth button below the second */
+  .role-button:nth-child(4) {
+    top: 30%;
+    left: 12%;
+}
+  
+  /* Fifth button below the third */
+  .role-button:nth-child(5) {
+    top: 30%;
+    right: -10%;
+}
+  
+  /* Sixth button centered below all */
+  .role-button:nth-child(6) {
+    top: -10%;
+    left: 32%;
+}
+  
+.role-button:nth-child(7) {
+  top: 40%;
+  left: 52%;
+} 
+
+.specialRole-button{
+  top: 13%;
+  left: 41%;
+  position: absolute;
+  width: 15vw; /* גודל רחב יותר */
+  height: 14vw; /* גובה גבוה יותר */
+  color: white;
+  text-align: center;
+  line-height: 10vh; /* ממרכז את הטקסט בגובה */
+  font-family: "Heebo";
+  font-weight: 600;
+  font-size: 1.4em; /* גודל גופן גדול יותר */
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* צורת משושה */
+  line-height: 1.5em; /* מקטין רווח בין שורות */
+
+}
+  .role-button:hover {
+    cursor: pointer;
+    filter: brightness(0.9); /* 80% מהבהירות המקורית */
+}
+  
+
+  .selected-icon{
+    position: absolute;
+    height: 8vh;
+    right: 5%;
+    transform: translateX(50%);
+    margin-top: -1vh;
+    position: absolute;
+  }
+
+  .selected-name{
+    font-family: "Karantina";
+    color: #6a6f77;
+    font-size: 5em;
+    position: absolute;
+    width: 70vw;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    margin-top: -4vh;
+  }
+  .evacution-dis{
+    font-family: "Heebo";
+    font-size: 1.2em;
+    color: #323030;
+  }
+
+  .scen-selected{
+    position: absolute;
+    width:40vw;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 3vh;
+  }
+
+  #evacuation{
+    position: relative;
+    top: -4vh;
+    width: 100vw;
+    height: 37vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .next-btnev{
+    background-color: #1bbfe5;
+    border: none;
+    border-radius: 55px;
+    width: 40vw;
+    height: 6vh;
+    position: absolute;
+    font-size: 2em;
+    font-family: "Heebo";
+    font-weight: bold;
+    color: #ffffff;
+    right: 50%;
+    transform: translateX(40%);
+    margin-top: 59vh;
+    cursor: pointer;
+  }
+  .next-btnev:hover{
+    background-color: #179cb9;
+
+  }
+  
+
+  .scenrio-name{
+    position: absolute;
+    font-size: 2em;
+    font-family: 'HEEBO';
+    font-weight: bold;
+    color: #6a6f77;
+    margin-top: 16vh;
+    right: 50%;
+
+}
+  
+  .scenrio-icon{
+    height: 15vh;
+    position: absolute;
+    margin-top: 0.1vh;
+    width: auto;
+    right: 50%;
+  }
+  .evacuation-dis{
+    font-size: 1.5em;
+    position: absolute;
+    direction: rtl;
+    margin-top: 30vh;
+    color: #656565;
+    right: 50%;
+    transform: translateX(40%);
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  #roles-container {
+    position: ABSOLUTE;
+    z-index: 2000;
+    text-align: center;
+    top: 18.5%;
+    left: 0%;
+    overflow: hidden;
+    background-color: #e6e2e2;
+    width: 84vw;
+    overflow: hidden;
+    height: 110vh;
+}
+#buttons-container {
+  position: relative;
+  right: 7vw;
+  margin-top: 23vh;
+  width: 80vw;
+  height: 37vh;
+  border-radius: 50%;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+
+  }
+  
+  .role-button {
+    position: absolute;
+    width: 15vw; /* גודל רחב יותר */
+    height: 28vh; /* גובה גבוה יותר */
+    color: white;
+    text-align: center;
+    line-height: 10vh; /* ממרכז את הטקסט בגובה */
+    font-family: "Heebo";
+    font-weight: 600;
+    font-size: 2vw; /* גודל גופן גדול יותר */
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* צורת משושה */
+    line-height: 1.5em; /* מקטין רווח בין שורות */
+
+}
+
+.role-button:nth-child(1) {
+  top: -22%; 
+   right: 10%;
+}   
+  
+  /* Second button to the left of the center */
+  .role-button:nth-child(2) {
+    top:66%;
+    left: 32%;
+}
+  
+  /* Third button to the right of the center */
+  .role-button:nth-child(3) {
+    top: 66%;
+    right: 10%;
+}
+  /* Fourth button below the second */
+  .role-button:nth-child(4) {
+    top: 30%;
+    left: 12%;
+}
+  
+  /* Fifth button below the third */
+  .role-button:nth-child(5) {
+    top: 30%;
+    right: -10%;
+}
+  
+  /* Sixth button centered below all */
+  .role-button:nth-child(6) {
+    top: -22%;    
+    left: 32%;
+}
+  
+.role-button:nth-child(7) {
+  top: 50%;
+  left: 52%;
+} 
+
+.specialRole-button{
+  top: 10%;
+  left: 41%;
+  position: absolute;
+  width: 15vw; /* גודל רחב יותר */
+  height: 28vh; /* גובה גבוה יותר */
+  color: white;
+  text-align: center;
+  line-height: 10vh; /* ממרכז את הטקסט בגובה */
+  font-family: "Heebo";
+  font-weight: 600;
+  font-size: 1.7vw; /* גודל גופן גדול יותר */
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* צורת משושה */
+  line-height: 1.5em; /* מקטין רווח בין שורות */
+
+}
+.specialRole-button:hover{
+  cursor: pointer;
+  filter: brightness(0.9); /* 80% מהבהירות המקורית */
+}
+  .role-button:hover {
+    cursor: pointer;
+    filter: brightness(0.9); /* 80% מהבהירות המקורית */
+}
+  
+
+  .selected-icon{
+    position: absolute;
+    height: 12vh;
+    right: 5%;
+    transform: translateX(50%);
+    margin-top: -4vh;
+    position: absolute;
+  }
+
+  .selected-name{
+    font-family: "Karantina";
+    color: #6a6f77;
+    font-size: 4vw;
+    position: absolute;
+    width: 70vw;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    margin-top: -4vh;
+  }
+  .evacution-dis{
+    font-family: "Heebo";
+    font-size: 1.2em;
+    color: #323030;
+  }
+
+  .scen-selected{
+    position: absolute;
+    width:40vw;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 3vh;
+  }
+
+  #evacuation{
+    position: relative;
+    top: -4vh;
+    width: 100vw;
+    height: 37vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .next-btnev{
+    background-color: #1bbfe5;
+    border: none;
+    border-radius: 55px;
+    width: 40vw;
+    height: 6vh;
+    position: absolute;
+    font-size: 2em;
+    font-family: "Heebo";
+    font-weight: bold;
+    color: #ffffff;
+    right: 50%;
+    transform: translateX(40%);
+    margin-top: 59vh;
+    cursor: pointer;
+  }
+  .next-btnev:hover{
+    background-color: #179cb9;
+
+  }
+  
+
+  .scenrio-name{
+    position: absolute;
+    font-size: 2em;
+    font-family: 'HEEBO';
+    font-weight: bold;
+    color: #6a6f77;
+    margin-top: 16vh;
+    right: 50%;
+
+}
+  
+  .scenrio-icon{
+    height: 15vh;
+    position: absolute;
+    margin-top: 0.1vh;
+    width: auto;
+    right: 50%;
+  }
+  .evacuation-dis{
+    font-size: 1.5em;
+    position: absolute;
+    direction: rtl;
+    margin-top: 30vh;
+    color: #656565;
+    right: 50%;
+    transform: translateX(40%);
+  }
+}

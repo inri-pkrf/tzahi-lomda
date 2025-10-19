@@ -1,0 +1,252 @@
+
+ @media screen and (max-width: 768px) {
+
+
+.credits-container {
+  position: fixed;
+  top: 20vh; /* Lower the top to extend height */
+  left: 0%;
+  width: 90%;
+  max-width: 800px;
+  height: 70vh; /* Adjust the height to make it taller */
+  border-radius: 10px;
+  z-index: 10000;
+  overflow-y: auto;
+  padding: 20px;
+  direction: rtl;
+  animation: slideInUp 0.8s ease-in-out;
+  background-color: transparent; /* Ensures no solid background */
+  position: relative; /* Required for pseudo-element */
+}
+
+.credits-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateX(50%);
+  right: 50%;
+  width: 90%;
+  height: 86%;
+  background-color: #f7b37c;
+  /* background-image: url(http://localhost:3000/tzahi/static/media/creditsBG.6fc1fac….png); */
+  background-size: cover;
+  opacity: 0.6;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+  
+@keyframes slideInUp {
+    from {
+        opacity: 0; /* שקוף */
+        transform: translateY(40px); /* מתחיל 20 פיקסלים למטה */
+    }
+    to {
+        opacity: 1; /* נראית */
+        transform: translateY(0); /* חוזר למקומו */
+    }
+}
+
+  .credits-title {
+    font-size: 3.5em;
+    font-family: "Karantina", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000000;
+  }
+  
+  .credits-text {
+    font-size: 1.5em;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .credits-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0;
+
+  }
+  
+  .credits-list li {
+    font-size: 5vw;
+    font-family: "Heebo", sans-serif;
+    color: #000000;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+    font-weight: bold;
+
+  }
+  
+  .credits-list li:hover {
+    color:  #000000;
+  }
+  
+ .closeAll{
+  height: 4vh;
+  width: auto;
+  right: 13%;
+  position: absolute;
+ }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+.credits-container {
+         position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 38vw;
+        height: 70vh;
+        background-color: #f8c7a0;
+        border-radius: 10px;
+        z-index: 10000;
+        overflow-y: auto;
+        padding: 20px;
+        direction: rtl;
+        animation: slideInUp 0.8s ease forwards;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20vh); /* מתחיל 20vh מתחת לאמצע */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* בדיוק במרכז */
+  }
+}
+
+
+  .credits-title {
+    font-size: 3.5em;
+    font-family: "Karantina", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000000;
+  }
+  
+  .credits-text {
+    font-size: 1.5em;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .credits-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0;
+
+  }
+  
+  .credits-list li {
+    font-size: 5vw;
+    font-family: "Heebo", sans-serif;
+    color: #000000;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+    font-weight: bold;
+
+  }
+  
+  .credits-list li:hover {
+    color:  #000000;
+  }
+  
+ .closeAll{
+  height: 4vh;
+  width: auto;
+  right: 13%;
+  position: absolute;
+ }
+  .closeAll:hover{
+  cursor:pointer
+ }
+}
+@media screen and (min-width: 1025px) {
+.credits-container {
+         position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 38vw;
+        height: 70vh;
+        background-color: #f8c7a0;
+        border-radius: 10px;
+        z-index: 10000;
+        overflow-y: auto;
+        padding: 20px;
+        direction: rtl;
+        animation: slideInUp 0.8s ease forwards;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20vh); /* מתחיל 20vh מתחת לאמצע */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* בדיוק במרכז */
+  }
+}
+
+
+
+
+
+  .credits-title {
+    font-size: 3.5em;
+    font-family: "Karantina", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #000000;
+  }
+  
+  .credits-text {
+    font-size: 1.5em;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .credits-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0;
+
+  }
+  
+  .credits-list li {
+         font-size: 1.8vw;
+        font-family: "Heebo", sans-serif;
+        color: #000000;
+        margin-bottom: 8px;
+        transition: color 0.3s;
+        font-weight: bold;
+
+  }
+  
+  .credits-list li:hover {
+    color:  #000000;
+  }
+  
+ .closeAll{
+  height: 4vh;
+  width: auto;
+  right: 13%;
+  position: absolute;
+ }
+ .closeAll:hover{
+  cursor:pointer
+ }
+}

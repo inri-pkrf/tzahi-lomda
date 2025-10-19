@@ -1,0 +1,206 @@
+.header {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 11vh;
+    z-index: 10000;
+    background-color: white; 
+  }
+  
+
+
+ @media screen and (max-width: 768px) {
+  .App-logo {
+    height: 7vh;
+    width: auto;
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+  }
+
+.back-homeNav{
+  height: 8vh;
+  width:35vw;
+  top: 2vh;
+  right: 5vw;
+  position: fixed;
+  background-color: transparent;
+  border: none;
+
+
+}
+
+
+  .right-logo-link {
+    position: fixed;
+    top: 10px;
+    left: 10px; /* Positioning the icon to the left */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .decorative-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32vw;
+    height: auto;
+    z-index: -1; 
+  }
+  .menu-dis{
+    color:white;
+    position: fixed; 
+    top: -1.3vh;
+    left: 6vw;
+    font-weight: bold;
+    font-size:0.8em; 
+    height: auto;
+    z-index:20; 
+    
+  }
+  .tzahi-logo{
+    height: 6.5vh;
+    width: auto;
+    position: fixed;
+    top: 2vh;
+    right: 38vw;
+  }
+  .divider-header{
+    position: fixed;
+    font-size: 48px;
+    right: 35vw;
+    font-weight: lighter;
+    font-family: 'HEEBO';
+    color: rgb(89, 89, 89);
+    margin-top: 0vw;
+
+  }
+ .info-icon{
+  height: 5.5vh;
+  width: auto;
+  position: fixed;
+  top: 2vh;
+  right: 72vw;
+  }
+
+ }
+ @media screen and (min-width: 769px) and (max-width: 1024px)  {
+ .App-logo {
+      height: 10vh;
+        width: auto;
+        position: fixed;
+        top: 1vh;
+        right: 3vw;
+    }
+  
+  .back-homeNav{
+           height: 8vh;
+        width: 17vw;
+        top: 2vh;
+        right: 2vw;
+        position: fixed;
+        background-color: transparent;
+        border: none;
+  }
+.back-homeNav:hover{
+ cursor: pointer;
+}
+
+
+  .right-logo-link {
+    position: fixed;
+    top: 10px;
+    left: 5px; /* Positioning the icon to the left */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .decorative-photo {
+    position: fixed;
+    top: 12vh;
+    left: 0;
+    height: 25vh;
+    width: auto;
+    z-index: -100; 
+  }
+  .menu-dis{
+    color:white;
+
+  }
+  .tzahi-white-nav{
+    height: 8vh;
+    width: auto;
+    position: fixed;
+    top: 3vh;
+    left: 5vw;
+  }
+  .info-icon{
+ display: none;
+  }
+  .info-icon:hover{
+    cursor:pointer
+  }
+ }
+
+  
+  @media screen and (min-width: 1025px) {
+    .App-logo {
+      height: 8vh;
+        width: auto;
+        position: fixed;
+        top: 1vh;
+        right: 3vw;
+    }
+  
+  .back-homeNav{
+           height: 8vh;
+        width: 17vw;
+        top: 1vh;
+        right: 2vw;
+        position: fixed;
+        background-color: transparent;
+        border: none;
+  }
+  .back-homeNav:hover{
+   cursor: pointer;
+  }
+  
+  
+    .right-logo-link {
+      position: fixed;
+      top: 10px;
+      left: 5px; /* Positioning the icon to the left */
+      cursor: pointer; /* Change cursor to pointer */
+    }
+    
+    .decorative-photo {
+position: fixed;
+    top: 8vh;
+    left: 0;
+    height: 25vh;
+    width: auto;
+    z-index: -100; 
+    }
+    .menu-dis{
+      color:white;
+      position: fixed; 
+      top: -1.3vh;
+      left: 5vw;
+      font-weight: bold;
+      font-size:1.2em; 
+      height: auto;
+      z-index:20; 
+      
+    }
+    .tzahi-white-nav{
+      height: 8vh;
+      width: auto;
+      position: fixed;
+      top: 10vh;
+      left: 3vw;
+    }
+    .info-icon{
+ display: none;
+  }
+    .info-icon:hover{
+      cursor:pointer
+    }
+  }

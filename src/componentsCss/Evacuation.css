@@ -1,0 +1,305 @@
+
+
+@media screen and (max-width: 768px) {
+
+#evacuation-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 2000;
+    text-align: center;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #d1d1d1;
+    width: 100vw;
+    min-height: 110vh; /* גובה מינימלי */
+    direction: rtl;
+    height: auto; /* הגובה מתאים לתוכן */
+}
+
+.evacuation-title {
+    font-family: "Karantina";
+    color: #6a6f77;
+    font-size: 3.2em;
+    padding: 1vh;
+    font-weight: 500;
+    margin-top: 10vh;
+    position: relative; /* שינוי מ-absolute ל-relative */
+    width: 100%; /* השתנה מ-100vw ל-100% */
+    text-align: center;
+}
+
+.icon-evacuation {
+    position: absolute; /* שינוי מ-absolute ל-relative */
+    margin-top: 12vh; /* שנה לפי הצורך */
+    margin-right: 20vw;
+    height: 5vh;
+    width: auto;
+}
+
+.tooltip {
+    margin-right: 10vw;
+}
+
+.tooltip-title {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    direction: rtl;
+    font-family: 'heebo';
+    color:#6a6f77;
+    font-size: 1.5em;
+  
+}
+
+.chevron {
+    margin-right: 2vw;
+    transform: rotate(180deg);
+    height:4vh;
+    width: auto;
+}
+
+.chevron.expanded {
+    transform: rotate(90deg); /* סובב את המשולש */
+}
+
+.tooltip-content {
+    min-width: 80vw;
+    font-family: "Heebo";
+    font-size: 1.2em;
+    max-width:100vw;
+    padding: 10px;
+    border-radius: 5px; /* פינות מעוגלות */
+    margin-right: 2vw;
+    margin-left: 10vw; /* הוספת רווח בצד השמאלי */
+}
+
+
+ul {
+    padding-left: 20px; /* רווח בצד השמאלי של הרשימה */
+}
+.checkbox-item {
+    display: flex; 
+    align-items: start; 
+    margin-bottom: 5px; /* רווח קל בין הפריטים */
+}
+
+.checkbox-text {
+    margin-left: 10px; /* רווח קל בין הצ'ק בוקס לטקסט */
+}
+
+
+.mine-checkbox {
+    width: 5vw;
+    height: 5vw;
+    border: 2px solid black;
+    border-radius: 0;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 0vw;
+    position: relative;
+    padding: 7px;
+}
+
+/* שינוי עיצוב ה-checkbox כאשר הוא מסומן */
+.mine-checkbox:checked {
+    background-color: black; /* צבע הרקע כאשר מסומן */
+    border-color: black; /* שינוי צבע הגבול כאשר מסומן */
+}
+
+/* הוספת סימן V כאשר ה-checkbox מסומן */
+.mine-checkbox:checked::before {
+    content: '✓'; /* סימן V */
+    position: absolute; /* מיקום מוחלט */
+    color: white; /* צבע הסימון */
+    left: 50%; /* מיקום שמאלה - במרכז */
+    top: 50%; /* מיקום למעלה - במרכז */
+    font-size: 2.5vw; /* גובה הסימון */
+    line-height: 0; /* מיקום הסימון בתוך ה-checkbox */
+    transform: translate(-50%, -50%); /* מיקום מרכזי */
+    font-weight: 700;
+    display: flex; /* עוזר למקם את התוכן במרכז */
+    justify-content: center; /* מיקום מרכזי */
+    align-items: center; /* יישור במרכז */
+}
+
+/* עיצוב רשימת המשימות */
+.tasks-list {
+    list-style: none; /* הסרת נקודות מהרשימה */
+    padding: 0; /* הסרת רווח פנימי */
+    margin: 0; /* הסרת רווח חיצוני */
+}
+.tooltips-container {
+    margin-left: 20px; /* המרחק שניתן להוסיף כאן */
+    right: 5px;
+}
+
+.title-checked::before{
+    content: '✓';
+    color: rgb(34, 181, 115);
+}
+.title-checked{
+    color: rgb(34, 181, 115);
+}
+}
+
+ 
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+}
+
+
+@media screen and (min-width: 1025px) {
+    #evacuation-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        z-index: 2000;
+        text-align: center;
+        top: 18.5%;
+        background-color: #e6e2e2;
+        width: 84vw;
+        min-height: 115vh; /* גובה מינימלי */
+        direction: rtl;
+        height: auto; /* הגובה מתאים לתוכן */
+    }
+    
+    .evacuation-title {
+        font-family: "Karantina";
+        color: #6a6f77;
+        font-size: 5em;
+        padding: 1vh;
+        font-weight: 500;
+        margin-top: 15vh;
+        position: relative; /* שינוי מ-absolute ל-relative */
+        width: 100%; /* השתנה מ-100vw ל-100% */
+        text-align: center;
+    }
+    
+    .icon-evacuation {
+        position: absolute; /* שינוי מ-absolute ל-relative */
+        margin-top: 10vh; /* שנה לפי הצורך */
+        margin-right: 40vw;
+        height: 8vh;
+        width: auto;
+    }
+    
+    .tooltip {
+        margin-right: 10vw;
+    }
+    
+    .tooltip-title {
+        display: flex;
+        align-items: flex-end;
+        font-weight: bold;
+        direction: rtl;
+        font-family: 'heebo';
+        color:#6a6f77;
+        font-size: 2em;
+      
+    }
+    
+    .chevron {
+        margin-right: 2vw;
+        transform: rotate(180deg);
+        height:4vh;
+        width: auto;
+    }
+    
+    .chevron.expanded {
+        transform: rotate(90deg); /* סובב את המשולש */
+    }
+    
+    .tooltip-content {
+        min-width: 80vw;
+        font-family: "Heebo";
+        font-size: 1.2em;
+        max-width:100vw;
+        padding: 10px;
+        border-radius: 5px; /* פינות מעוגלות */
+        margin-right: 2vw;
+        margin-left: 10vw; /* הוספת רווח בצד השמאלי */
+    }
+    
+    
+    ul {
+        padding-left: 20px; /* רווח בצד השמאלי של הרשימה */
+    }
+    .checkbox-item {
+        display: flex; 
+        align-items: start; 
+        margin-bottom: 5px; /* רווח קל בין הפריטים */
+    }
+    
+    .checkbox-text {
+        margin-right: 5vw;
+        font-size: 1.3em;; /* רווח קל בין הצ'ק בוקס לטקסט */
+    }
+    
+    
+    .mine-checkbox {
+        width: 2vw;
+        height: 2vw;
+        border: 2px solid black;
+        border-radius: 0;
+        appearance: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-right: 0vw;
+        position: relative;
+        padding: 7px;
+    }
+    
+    /* שינוי עיצוב ה-checkbox כאשר הוא מסומן */
+    .mine-checkbox:checked {
+        background-color: black; /* צבע הרקע כאשר מסומן */
+        border-color: black; /* שינוי צבע הגבול כאשר מסומן */
+    }
+    
+    /* הוספת סימן V כאשר ה-checkbox מסומן */
+    .mine-checkbox:checked::before {
+        content: '✓'; /* סימן V */
+        position: absolute; /* מיקום מוחלט */
+        color: white; /* צבע הסימון */
+        left: 50%; /* מיקום שמאלה - במרכז */
+        top: 50%; /* מיקום למעלה - במרכז */
+        font-size: 2vw; /* גובה הסימון */
+        line-height: 0; /* מיקום הסימון בתוך ה-checkbox */
+        transform: translate(-50%, -50%); /* מיקום מרכזי */
+        font-weight: 700;
+        display: flex; /* עוזר למקם את התוכן במרכז */
+        justify-content: center; /* מיקום מרכזי */
+        align-items: center; /* יישור במרכז */
+    }
+    
+    /* עיצוב רשימת המשימות */
+    .tasks-list {
+        list-style: none; /* הסרת נקודות מהרשימה */
+        padding: 0; /* הסרת רווח פנימי */
+        margin: 0; /* הסרת רווח חיצוני */
+    }
+    .tooltips-container {
+        left: 5vw;
+    }
+    
+    .title-checked::before{
+        content: '✓';
+        color: rgb(34, 181, 115);
+    }
+    .title-checked{
+        color: rgb(34, 181, 115);
+    }
+    .back-emergency-ev {
+        text-decoration: underline;
+        font-family: "Heebo";
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .back-emergency-ev:hover {
+      cursor: pointer;
+    }
+    
+}

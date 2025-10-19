@@ -1,0 +1,226 @@
+.homepage-container {
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: 2000; /* Ensure it appears above the header */
+      text-align: right;
+      padding-top: 2vh;
+      overflow: scroll;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pdf-title {
+          font-family: "karantina";
+          font-size: 3.5em;
+          font-weight: 400;
+          position: absolute;
+          right: 50%;
+          transform: translateX(50%);
+          width: 90vw;
+          margin-top: 13vh;
+          text-align: center;
+        }
+        .intro-pdf{
+          font-family: "Heebo";
+          font-size: 1.2em;
+          position: absolute;
+          right: 50%;
+          transform: translateX(50%); /* שינוי פה */
+          width: 90vw;
+          margin-top: 25vh;
+          text-align: center;
+          color: rgb(100, 100, 100);
+  
+        }
+      
+        .pdf-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 70%;
+            justify-items: center;
+        }
+      
+        .pdf-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      
+        .pdf-link {
+          text-decoration: none;
+          color: #000;
+          font-size: 16px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width:30vw;
+        }
+      
+        .pdf-icon {
+          width: auto;
+          height: 10vh;
+        }
+      
+        .pdf-text {
+          font-size: 16px;
+        }
+      
+        /* עיצוב עבור המקרה של 5 פריטים - שורה של 2 ואז אחד באמצע */
+        .pdf-list > .pdf-item:nth-child(5) {
+          grid-column: span 2; /* הפריט החמישי יימתח על 2 עמודות */
+        }
+      }
+      
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px)  {
+      .pdf-title {
+        font-family: "karantina";
+        font-size: 8em;
+        font-weight: 400;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%); /* שינוי פה */
+        width: 90vw;
+        margin-top: 10vh;
+        text-align: center;
+      }
+      .intro-pdf{
+        font-family: "Heebo";
+        font-size: 1.5em;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%); /* שינוי פה */
+        width: 90vw;
+        margin-top: 30vh;
+        text-align: center;
+        color: rgb(100, 100, 100);
+
+      }
+      .pdf-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9vw;
+        width: 100vw;
+        margin-top: 43vh;
+        align-items: center;
+      }
+      
+      .pdf-item {
+        display: flex;
+        flex-direction: column; /* מבטיח שהכותרת תהיה מתחת לאייקון */
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .pdf-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        text-align: center; /* מוודא שהתוכן מיושר */
+        width: 100%; /* מאפשר מיקום נכון */
+      }
+      
+      
+      .pdf-icon {
+        width: 6vw;
+        height: auto;
+      }
+      
+      .pdf-text {
+        position: relative;
+        top: 4vh;
+        right:50%;
+        transform: translateX(70%);
+        text-align: center;
+        font-size: 18px;
+        color: #000;
+        width: 80%; /* קובע רוחב אחיד */
+        display: block; /* מוודא ירידת שורה */
+        overflow-wrap: break-word; /* אם מילה ארוכה מדי, היא תיחתך */
+    }
+    
+          
+    }
+    
+    @media screen and (min-width: 1025px) {
+      .pdf-title {
+        font-family: "karantina";
+        font-size: 4vw;
+        font-weight: 400;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%); /* שינוי פה */
+        width: 90vw;
+        margin-top: 15vh;
+        text-align: center;
+      }
+      .intro-pdf{
+        font-family: "Heebo";
+        font-size: 1.6vw;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 90vw;
+        margin-top: 30vh;
+        text-align: center;
+        color: rgb(100, 100, 100);
+
+      }
+      .pdf-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9vw;
+        width: 100vw;
+        margin-top: 43vh;
+        align-items: center;
+      }
+      
+      .pdf-item {
+        display: flex;
+        flex-direction: column; /* מבטיח שהכותרת תהיה מתחת לאייקון */
+        align-items: center;
+        gap: 5vw;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .pdf-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 2vw;
+        text-align: center; /* מוודא שהתוכן מיושר */
+        width: 100%; /* מאפשר מיקום נכון */
+      }
+      
+      
+      .pdf-icon {
+        width: 6vw;
+        height: auto;
+      }
+      
+      .pdf-text {
+        position: relative;
+        top: 4vh;
+        right:50%;
+        transform: translateX(80%);
+        text-align: center;
+        font-size: 1.3vw;
+        color: #000;
+        width: 70%; /* קובע רוחב אחיד */
+        display: block; /* מוודא ירידת שורה */
+        overflow-wrap: break-word;
+    }
+    
+    
+          
+    }
