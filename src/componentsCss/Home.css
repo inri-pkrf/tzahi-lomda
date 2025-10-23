@@ -226,20 +226,20 @@ hr.dotted-line2{
 }
 
 .tzahi-button {
-    border: none;
-    border-radius: 30px;
-    width: 69vw;
-    height: 8vh;
-    position: absolute;
-    font-size: 1.3em;
-    font-family: "Heebo";
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    padding: 1.5vw;
-    right: 50%;
-    transform: translateX(50%);
-    margin-top: 18vh;
-    background-color: rgb(56 179 140);
+ border: none;
+        border-radius: 30px;
+        width: 69vw;
+        height: 8vh;
+        position: absolute;
+        font-size: 1.3em;
+        font-family: "Heebo";
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        padding: 1.5vw;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 20vh;
+        background-color: rgb(56 179 140);
 
 }
 
